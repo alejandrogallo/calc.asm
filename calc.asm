@@ -214,3 +214,5 @@ exit:
 	syscall
 
 ;We are all done :) If you think you can improve this more make a pull request (http://github.com/flouthoc/calc.asm)
+
+; vim-run: make ; ./calc
