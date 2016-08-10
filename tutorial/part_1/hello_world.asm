@@ -27,3 +27,4 @@ _start:
 ;source : http://0xax.blogspot.de/2014/08/say-hello-to-x64-assembly-part-1.html#more
 
 ;vim-run: echo -e "\n\n********************";make ; ./$(basename % .asm)
+
