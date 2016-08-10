@@ -1,16 +1,17 @@
 NASM=nasm
 CFLAGS=-f elf64
 LINKER=ld
-OBJ=calc.o
+MAIN=hello_world
+OBJ=$(MAIN).o
 
-all: calc
+all: $(MAIN)
 
 %.o: %.asm
 	$(NASM) $(CFLAGS) -o $@ $<
 
-calc: $(OBJ)
-	$(LINKER) -o calc $(OBJ)
+$(MAIN): $(OBJ)
+	$(LINKER) -o $(MAIN) $(OBJ)
 
 .PHONY: clean
 clean:
-	rm *.o calc
+	rm *.o $(MAIN)
